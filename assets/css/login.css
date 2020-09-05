@@ -1,0 +1,107 @@
+@font-face{
+    font-family:"metropolis-regular";
+    src: url("/assets/fonts/metropolis.regular.otf") format("woff"),
+         url("/assets/fonts/metropolis.regular.otf") format("opentype"),
+         url("/assets/fonts/metropolis.regular.otf") format("truetype");
+}
+
+body {
+    font-family: "metropolis-regular";
+}
+
+.form a {
+    color: #2AA952;
+}
+
+.form a:hover {
+    color: #2c7e46;
+}
+
+.header .logo {
+    margin-bottom: 40px;
+}
+
+.header .logo img {
+    width: 135px;
+    height: 50px;
+}
+
+.header .message {
+    margin-bottom: 50px;
+}
+
+.header .message span {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.switch .btn {
+    width: 123px;
+    height: 48px;
+    margin-bottom: 40px;
+}
+
+.switch .btn.btn-primary {
+    border-radius: 4px 0px 0px 4px;
+}
+
+.switch .btn.btn-secondary {
+    border-radius: 0px 4px 4px 0px;
+}
+
+.btn-primary {
+    background-color: #2AA952;
+    color: #ffffff;
+    border-width: 0;
+}
+.btn-primary:focus {
+    background-color: #2AA952;
+    color: #ffffff;
+    border-width: 0;
+    border:none;
+    outline: none;
+    display: block
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    color: #2AA952;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #2AA952;
+}
+
+.auth {
+    width: 400px;
+}
+
+.auth .form-group {
+    margin: 0;
+}
+
+.auth .input.name {
+    margin-bottom: 16px;
+}
+
+.auth .input.pass {
+    margin-bottom: 26px;
+}
+
+.auth .input input {
+    height: 48px;
+    border: 1px solid rgb(43, 73, 53);
+    border-radius: 4px;
+    padding: 0 20px;
+}
+
+.auth .forgot-link {
+    margin-bottom: 26px;
+}
+
+.auth .button .btn {
+    height: 48px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+}
