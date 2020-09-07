@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Bag - Blanja</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/my-bag.css">
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+</head>
+<body>
+    <nav class="navbar w-100 sticky-top bg-light d-flex justify-content-around align-items-center mb-5">
+        <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="logo"></a>
+    
+        <div class="form d-flex flex-row justify-content-center align-items-center">
+            <div class="search-bar">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <a href="#"><img class="search-icon" src="./assets/images/search.svg" alt="search"></a>
+            <button type="button" id="filter" class="btn btn-outline-dark filter"><img class="filter-icon" src="./assets/images/filter.svg" alt="filter"></button>
+        </div>
+
+        <div class="nav-right d-flex align-items-center justify-content-end">
+                <a href="#" class=""><img class="cart-icon mr-5" src="./assets/images/cart.svg" alt="search"></a>
+                <a href="#" class=""><img class="cart-icon mr-5" src="./assets/images/bell.svg" alt="search"></a>
+                <a href="#" class=""><img class="cart-icon mr-5" src="./assets/images/mail.svg" alt="search"></a>
+                <a href="#" class=""><img class="cart-icon" src="./assets/images/profile.svg" alt="search"></a>
+            
+        </div>
+    </nav>
+
+    <div class="container w-100">
+        <div class="main">
+            <h1 class="category">My bag</h1>
+        </div>
+        <div class="Cart d-flex flex-row">
+            <div class="item-list d-flex flex-column">
+                <div class="main-list d-flex justify-content-between flex-row align-items-center">
+                    <div class="desc-main d-flex align-items-center justify-content-between flex-row">
+                        <div class="desc-info1 d-flex align-items-center">
+                            <img src="./assets/images/select.svg"/>
+                        </div>
+                        <div class="desc-info2 d-flex align-items-center mt-3">
+                            <p class="teks1">Select all items</p>
+                            <p class="teks2">(2 items selected)</p>
+                        </div>
+                    </div>
+                    <p class="teks-delete mt-3">Delete</p>
+                </div>
+                <div class="bag-list">
+                    <div class="listOne d-flex justify-content-between flex-row align-items-center">
+                        <img src="./assets/images/select.svg"/>
+                        <div class="someOne d-flex align-items-center justify-content-start">
+                            <img class="jas" src="./assets/images/jasCart.svg"/>
+                            <div class="namaBarang mt-3">
+                                <p class="teks1">Men's formal suit - Black</p>
+                                <p class="teks2">Zalora Cloth</p>
+                            </div>
+                        </div>
+                        
+                        <img class="tombol position-relative" src="./assets/images/tombol.svg"/>
+                        <p class="harga mt-3">$ 20.0</p>
+                    </div>
+                    <div class="listTwo d-flex justify-content-between flex-row align-items-center">
+                        <img src="./assets/images/select.svg"/>
+                        <div class="someOne d-flex align-items-center justify-content-start">
+                            <img class="jaket" src="./assets/images/maleJacket.svg"/>
+                            <div class="namaBarang">
+                                <p class="teks1">Men's Jacket jeans</p>
+                                <p class="teks2">Zalora Cloth</p>
+                            </div>
+                        </div>
+                        
+                        <img class="tombol position-relative" src="./assets/images/tombol.svg"/>
+                        <p class="harga mt-3">$ 20.0</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------- -->
+            <div class="item-summary">
+                <h4>Shopping summary</h4>
+                    <div class="total-price d-flex flex-row justify-content-between"> 
+                        <p>Total price</p>
+                        <h5 class="harga">$ 40.0</h5>
+                    </div>
+                <button class="buy-btn d-block mt-3">Buy</button>
+            </div>
+        </div>
+    </div>
+<script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

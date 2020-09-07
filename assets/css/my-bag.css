@@ -1,0 +1,193 @@
+@font-face{
+    font-family: Metropolis;
+    src: url("../fonts/Metropolis-Regular.woff") format("woof"),
+    url("../fonts/Metropolis-Regular.woff2") format("woff2"),
+    url("../fonts/Metropolis-SemiBold.woff") format("woff"),
+    url("../fonts/Metropolis-SemiBold.woff2") format("woff2"),
+    url("../fonts/Metropolis-Bold.woff") format("woff"),
+    url("../fonts/Metropolis-Bold.woff2") format("woff2");
+}
+
+body {
+    font-family: "Metropolis";
+}
+
+.navbar-brand img:hover{
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
+.search-bar {
+    width: 507px
+}
+.search-bar input {
+    border-radius: 23px;
+    height: 40px;
+    border: 1px solid #8E8E93;
+}
+
+.search-icon {
+    position: relative;
+    left: -30px;
+}
+
+.filter {
+    background-color:white;
+    height: 40px;
+    width: 40px;
+    border-radius:12px;
+    border: 1px solid #8E8E93;
+    display: flex;
+    margin-left: -10px;
+    align-items: center;
+    padding: 9px;
+}
+.filter:hover{
+    background-color: white
+}
+.form #filter:focus {
+    background-color: #009ca6
+}
+
+
+
+
+.Cart {
+    margin-left: -40px;
+    margin-right: -40px;
+}
+
+.main .category {
+    margin-bottom: 1px;
+    font-size:34;
+    font-weight: bold;
+    color: #222222
+  }
+.Cart {
+    justify-content: space-between;
+}
+
+.Cart .item-list {
+    /* margin-right: 60px !important; */
+    /* border: 1px solid #000000; */
+    width: 750px;
+    height: 126px
+}
+
+.Cart .main-list {
+    padding: 10px;
+    padding-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 10px 2px rgba(115, 115, 115, 0.75);
+    border-radius: 4px;
+    height: 64px;
+}
+
+.Cart .main-list .teks-delete {
+    color: #DB3022
+}
+
+.Cart .main-list .desc-main .desc-info1{
+    margin-left: 10px;
+}
+.Cart .main-list .desc-main .desc-info2{
+    justify-content: space-evenly;
+    margin-left: 15px;
+}
+.Cart .main-list .desc-main .desc-info2 .teks2{
+    color: #D5D5D5;
+    margin-left: 5px;
+}
+
+.Cart .bag-list .listOne{
+    padding: 10px;
+    padding-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background: #FFFFFF;
+    box-shadow: 10px 2px 10px 2px rgba(115, 115, 115, 0.75);
+    border-radius: 4px;
+    height: 126px;
+}
+.Cart .bag-list .listTwo{
+    padding: 10px;
+    padding-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    background: #FFFFFF;
+    box-shadow: 10px 2px 10px 2px rgba(115, 115, 115, 0.75);
+    border-radius: 4px;
+    height: 126px;
+}
+
+.Cart .bag-list .listOne .someOne {
+    margin-right: 150px;
+}
+
+.Cart .bag-list .listOne .someOne .namaBarang {
+    margin-left: 10px;
+    line-height: 8px;
+}
+.Cart .bag-list .listOne .someOne .namaBarang .teks2{
+    color: #9B9B9B  ;
+}
+.Cart .bag-list .listOne .harga{
+    font-weight: 600;
+}
+.Cart .bag-list .listTwo .someOne .namaBarang .teks2{
+    color: #9B9B9B  ;
+}
+
+.Cart .bag-list .listTwo .someOne {
+    margin-right: 180px;
+    margin-left: 0px !important;
+}
+
+.Cart .bag-list .listOne .tombol{
+    position: relative;
+    right: 85px;
+}
+.Cart .bag-list .listTwo .someOne .namaBarang {
+    margin-left: 10px;
+    line-height: 8px;
+}
+
+.Cart .bag-list .listTwo .tombol{
+    right: 85px;
+}
+.Cart .bag-list .listTwo .harga{
+    font-weight: 600;
+}
+
+.Cart .item-summary {
+    padding: 20px;
+    margin-top: 13px;
+    width: 400px;
+    height: 180px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 10px 2px rgba(115, 115, 115, 0.75);
+    border-radius: 4px;
+}
+
+.item-summary .total-price p {
+    color: #9B9B9B;
+}
+.item-summary h4 {
+    font-weight: bold;
+}
+
+.item-summary .buy-btn {
+    color: white;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    background: #DB3022;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none
+}
+.item-summary .total-price .harga {
+    font-weight: bold;
+}
