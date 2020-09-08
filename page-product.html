@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Timotius">
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+</head>
+<body>
+    <nav class="navbar sticky-top container w-100">
+        <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="logo"></a>
+        
+        <div class="row mr-1">
+            <div class="col-md-12 col-sm-12 search-group d-flex position-relative">
+                <input type="text" class="form-control search-input border-secondary rounded-pill" placeholder="Search" aria-label="Search">
+                <img src="./assets/images/Search.svg" alt="search icon" class="search-icon position-absolute">
+                <button class="btn btn-outline-secondary ml-2"><img src="./assets/images/filter.svg" alt="Filter" aria-label="Filter"></button>    
+            </div>
+        </div>
+        <div class="btn-user row d-flex align-items-center">
+            <div class="col-md-2 col-6">
+                <a href="#"><img src="./assets/images/cart.svg" alt="search icon" class="cart-icon"></a>
+            </div>
+            <div class="col-md-10 col-6 d-flex">
+                <button class="btn btn-primary rounded-pill mr-2 p-0 login">Login</button>
+                <button class="btn btn-outline-secondary rounded-pill p-0">Signup</button>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container w-100 h-100 mt-5">
+
+        <a href="#" class="home"><span class="text-secondary">Home</span></a>
+        <a href="#" class="back"><span class="text-secondary">></span></a>
+        <a href="#" class="category"><span class="text-secondary">category</span></a>
+        <a href="#" class="back"><span class="text-secondary">></span></a>
+        <a href="#" class="Tshirt"><span class="text-secondary">T-shirt</span></a>
+
+        <div class="body-container mt-5 row">
+            <div class="col-5">
+                <div class="row no-gutters models">
+                    <div class="col-12">
+                        <img src="./assets/images/model1.svg" alt="model-1" class="model-pics rounded">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-2">
+                        <img src="./assets/images/model2.svg" alt="model-2" class="model-2 rounded">
+                    </div>
+                    <div class="col-2 d-flex flex-row">
+                        <img src="./assets/images/model3.svg" alt="model-3" class="model-3 rounded">
+                    </div>
+                    <div class="col-2 d-flex flex-row">
+                        <img src="./assets/images/model4.svg" alt="model-4" class="model-4 rounded">
+                    </div>
+                    <div class="col-2 d-flex flex-row">
+                        <img src="./assets/images/model5.svg" alt="model-5" class="model-5 rounded">
+                    </div>
+                    <div class="col-2 d-flex flex-row">
+                        <img src="./assets/images/model6.svg" alt="model-6" class="model-6 rounded">
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="col-7 baju-muslim no-gutters">
+                <div class="item-summary">
+                    <div class="judul">
+                        <h2 class="h2 font-weight-bold">Baju muslim pria</h2>
+                        <p class="text-black-50">Zalora Cloth</p>
+                        <div class="rating">
+                            <img src="./assets/images/Star.svg"/>
+                            <img src="./assets/images/Star.svg"/>
+                            <img src="./assets/images/Star.svg"/>
+                            <img src="./assets/images/Star.svg"/>
+                            <img src="./assets/images/Star.svg"/>
+                            <span style="color:#9B9B9B;font-size: 12px;">(10)</span>
+                        </div>
+                    </div>
+                    <div class="total-price w-75 mt-4"> 
+                        <p class="price">Price</p>
+                        <h5 class="harga">$ 20.0</h5>
+                        <!-- ----- -->
+                        <div class="warna mt-4">
+                            <div class="btn-group d-flex flex-column">
+                                <p class="color">Color</p>
+                                <div class="eclipse row">
+                                    <div class="col-3">
+                                        <button class="btn btn-outline-secondary relative rounded-circle changesColor"></button>
+                                        <img class="garis position-absolute" src="./assets/images/garis.svg"/>
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn btn-outline-secondary rounded-circle changesColor2"></button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn btn-outline-secondary rounded-circle changesColor3"></button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn btn-outline-secondary rounded-circle changesColor4"></button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title mt-4 d-flex row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="total-product col-4">
+                                        <p>Size</p>
+                                        <div class="btn-jumlah d-flex flex-row justify-content-between align-items-center">
+                                            <button class="btn btn-light btn-kurang rounded-circle"><img class="kurang" src="./assets/images/kurang.svg"/></button>
+                                            <p class="mt-3">28</p>
+                                            <button class="btn btn-tambah rounded-circle"><img class="tambah" src="./assets/images/tambah.svg"/></button>
+                                        </div>
+                                    </div>
+                                    <div class="total-product col-4">
+                                        <p>Jumlah</p>
+                                        <div class="btn-jumlah d-flex flex-row justify-content-between align-items-center">
+                                            <button class="btn btn-kurang rounded-circle">
+                                                <img class="kurang" src="./assets/images/kurang.svg"/>
+                                            </button>
+                                            <p class="mt-3">1</p>
+                                            <button class="btn btn-tambah rounded-circle"><img class="tambah" src="./assets/images/tambah.svg"/></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="cart-container mt-4">
+                    <button class="btn btn-outline-secondary rounded-pill buy-btn1">Chat</button>
+                    <button class="btn btn-outline-secondary rounded-pill buy-btn2">Add bag</button>
+                    <button class="buy-btn3 rounded-pill">Buy Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <div class="information container mt-4">
+        <div class="info">
+            <h4 class="font-weight-bold">Informasi Produk</h4>
+        </div>
+        <div class="cond mt-4">
+            <h5 class="font-weight-bold">Condition</h5>
+        </div>
+        <div class="new">
+            <h5 class="font-weight-bold">New</h5>
+        </div>
+        <div class="desc mt-4">
+            <h5 class="font-weight-bold">Description</h5>
+        </div>
+        <div class="lorem text-muted">
+            <p class="description-item">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                <br>Donec non magna rutrum, pellentesque augue eu, sagittis velit. Phasellus quis laoreet dolor. Fusce nec pharetra quam. Interdum et malesuada fames ac ante ipsum <br> primis in faucibus. Praesent sed enim vel turpis blandit imperdiet ac ac felis. Etiam tincidunt tristique placerat. Pellentesque a consequat mauris, vel suscipit ipsum.<br>
+                Donec ac mauris vitae diam commodo vehicula. Donec quam elit, sollicitudin eu nisl at, ornare suscipit magna.<br>
+                
+                <br><br>Donec non magna rutrum, pellentesque augue eu, sagittis velit. Phasellus quis laoreet dolor. Fusce nec pharetra quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed enim vel turpis blandit imperdiet ac ac felis.
+
+                <br><br>In ultricies rutrum tempus. Mauris vel molestie orci. 
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <div class="review-stats row mt-5 mb-5">
+            <div class="col-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Product Review</h3>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center align-items-center">
+                        <div class="row no-gutters">
+                            <div class="col-12">
+                                <span class="display-4 rata-rata">5.0</span><span class="text-secondary">/10</span>
+                            </div>
+                            <div class="col-12">
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./assets/images/Star.svg" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="row no-gutters my-1 rating-bar d-flex justify-content-center align-items-center">
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                                <img src="./assets/images/Star.svg" alt="star">
+                            </div>
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                                <span class="text-secondary">5</span class="text-secondary">
+                            </div>
+                            <div class="col d-flex justify-content-start align-items-center">
+                                <div class="bg-danger rounded-pill mx-2 progress-bar">
+                                </div>
+                            </div>
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                                <span class="text-secondary">4</span class="text-secondary">
+                            </div>
+                        </div>
+                        <div class="row no-gutters my-1 rating-bar d-flex justify-content-center align-items-center">
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                                <img src="./assets/images/Star.svg" alt="star">
+                            </div>
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                                <span class="text-secondary">4</span class="text-secondary">
+                            </div>
+                            <div class="col d-flex justify-content-start align-items-center">
+                                <div class="bg-danger rounded-pill mx-2 progress-bar2">
+                                </div>
+                            </div>
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                                <span class="text-secondary">0</span class="text-secondary">
+                            </div>
+                        </div>
+                        <div class="row no-gutters my-1 rating-bar d-flex justify-content-center align-items-center">
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                                <img src="./assets/images/Star.svg" alt="star">
+                            </div>
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                                <span class="text-secondary">3</span class="text-secondary">
+                            </div>
+                            <div class="col d-flex justify-content-start align-items-center">
+                                <div class="bg-danger rounded-pill mx-2 progress-bar3">
+                                </div>
+                            </div>
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                                <span class="text-secondary">0</span>
+                            </div>
+                        </div>
+                        <div class="row no-gutters my-1 rating-bar d-flex justify-content-center align-items-center">
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                                <img src="./assets/images/Star.svg" alt="star">
+                            </div>
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                                <span class="text-secondary">2</span class="text-secondary">
+                            </div>
+                            <div class="col d-flex justify-content-start align-items-center">
+                                <div class="bg-danger rounded-pill mx-2 progress-bar4">
+                                </div>
+                            </div>
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                                <span class="text-secondary">0</span>
+                            </div>
+                        </div>
+                        <div class="row no-gutters my-1 rating-bar d-flex justify-content-center align-items-center">
+                            <div class="col-1 d-flex justify-content-center align-items-center4">
+                                <img src="./assets/images/Star.svg" alt="star">
+                            </div>
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                                <span class="text-secondary">1</span class="text-secondary">
+                            </div>
+                            <div class="col d-flex justify-content-start align-items-center">
+                                <div class="bg-danger rounded-pill mx-2 progress-bar5">
+                                </div>
+                            </div>
+                            <div class="col-1 d-flex justify-content-center align-items-center">
+                                <span class="text-secondary">0</span class="text-secondary">
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-border"></div>
+
+        <div class="category-desc mt-5">
+            <h2 class="font-weight-bold bt-5">You can also like this</h2>
+            <span class="detail">You’ve never seen it before!</span>
+        </div>
+
+        <div class="row mb-3 mt-4">
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <span class="text-secondary mt-1"><small>Zalora Cloth</small></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <span class="text-secondary mt-1"><small>Zalora Cloth</small></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <span class="text-secondary mt-1"><small>Zalora Cloth</small></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <span class="text-secondary mt-1"><small>Zalora Cloth</small></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <span class="text-secondary mt-1"><small>Zalora Cloth</small></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3 mt-4">
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <span class="text-secondary mt-1"><small>Zalora Cloth</small></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <span class="text-secondary mt-1"><small>Zalora Cloth</small></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <span class="text-secondary mt-1"><small>Zalora Cloth</small></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <span class="text-secondary mt-1"><small>Zalora Cloth</small></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <span class="text-secondary mt-1"><small>Zalora Cloth</small></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

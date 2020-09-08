@@ -1,0 +1,21 @@
+.navbar {
+    background-color: #ffffff
+}
+
+.row .search-input {
+    width: 460px;
+    height: 40px;
+}
+
+.search-group {
+    height: 40px;
+}
+
+.search-group button {
+    border-radius: 12px;
+}
+
+.search-icon{
+    right: 100px;
+    top: 11px;
+}

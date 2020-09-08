@@ -1,12 +1,15 @@
 @font-face{
-    font-family:"metropolis-regular";
-    src: url("/assets/fonts/metropolis.regular.otf") format("woff"),
-         url("/assets/fonts/metropolis.regular.otf") format("opentype"),
-         url("/assets/fonts/metropolis.regular.otf") format("truetype");
+    font-family: Metropolis;
+    src: url("../fonts/Metropolis-Regular.woff") format("woof"),
+    url("../fonts/Metropolis-Regular.woff2") format("woff2"),
+    url("../fonts/Metropolis-SemiBold.woff") format("woff"),
+    url("../fonts/Metropolis-SemiBold.woff2") format("woff2"),
+    url("../fonts/Metropolis-Bold.woff") format("woff"),
+    url("../fonts/Metropolis-Bold.woff2") format("woff2");
 }
 
 body {
-    font-family: "metropolis-regular";
+    font-family: "Metropolis";
 }
 
 .form a {
@@ -51,12 +54,12 @@ body {
 }
 
 .btn-primary {
-    background-color: #2AA952;
+    background-color: #DB3022;
     color: #ffffff;
     border-width: 0;
 }
 .btn-primary:focus {
-    background-color: #2AA952;
+    background-color: #DB3022;
     color: #ffffff;
     border-width: 0;
     border:none;
@@ -66,11 +69,11 @@ body {
 
 .btn-light {
     background-color: #ffffff;
-    color: #2AA952;
+    color: #DB3022;
 }
 
 .btn-primary:hover, .btn-light:hover {
-    background-color: #2AA952;
+    background-color: #DB3022;
     color: #ffffff;
 }
 

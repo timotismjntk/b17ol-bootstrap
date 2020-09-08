@@ -1,0 +1,196 @@
+.navbar {
+    background-color: #ffffff
+}
+
+.row .search-input {
+    width: 460px;
+    height: 40px;
+}
+
+.search-group {
+    height: 40px;
+}
+
+.search-group button {
+    border-radius: 12px;
+}
+
+.search-icon{
+    right: 100px;
+    top: 11px;
+}
+
+.btn-user button {
+    width: 100px;
+    height: 36px;
+}
+
+.btn-user .login {
+    background-color: #DB3022;
+}
+
+.body-container .models {
+    margin-left: -12px;
+}
+
+.body-container .model-pics {
+    width: 400px;
+    height: 382px;
+    padding-left: -60px !important;
+}
+
+/* .baju-muslim {
+    margin-left: -60px;
+} */
+
+.judul {
+    margin-top: -8px;
+}
+.judul h2 {
+    font-size: 28px;
+}
+.judul p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #9B9B9B;
+}
+
+.total-price .price {
+    font-weight: 500;
+    font-size: 16px;
+    color: #9B9B9B;
+}
+
+.total-price .harga {
+    font-size: 33px;
+    color: #222222;
+    font-weight: bold;
+}
+
+.eclipse {
+    width: 40%
+}
+
+.eclipse button {
+    width: 36px;
+    height: 36px;
+}
+.eclipse .garis {
+    z-index: -1;
+}
+.eclipse .changesColor {
+    background-color: #1A1A1A;
+}
+.eclipse .changesColor2 {
+    background-color: #D84242;
+}
+.eclipse .changesColor3 {
+    background-color: #4290D8;
+}
+.eclipse .changesColor4 {
+    background-color: #42D86C;
+}
+
+.total-product .btn-kurang {
+    background-color:#D4D4D4 !important
+}
+
+.title .total-product .btn-jumlah {
+    margin-top: -10px
+}
+
+.garis {
+    top: -5px;
+    left: 10px;
+}
+
+.warna .color {
+    font-size: 16px;
+    color: #222222;
+    font-weight: 600;
+}
+
+.total-product p {
+    font-size: 16px;
+    color: #222222;
+    font-weight: 600;
+}
+
+.cart-container .buy-btn1 {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    width: 160px;
+    height: 48px;
+}
+.cart-container .buy-btn2 {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    width: 160px;
+    height: 48px;
+}
+.cart-container .buy-btn3 {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    width: 306px;
+    height: 48px;
+    background: #DB3022;
+    outline: none;
+    border: none;
+}
+
+.information .info h4 {
+    font-size: 28px;
+    font-weight: 600;
+}
+.information .cond h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.information .new h5 {
+    color:#DB3022
+}
+.information .lorem {
+    font-size: 14px;
+    color: red;
+}
+
+.rata-rata{
+    font-weight: 600;
+}
+
+.rating-bar .progress-bar {
+    height: 10px;
+    width: 100%;
+}
+
+.category-border {
+    border-top: 1px solid #D4D4D4;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.category-desc .detail {
+    font-size: 12px;
+    color: #9B9B9B;
+}
+.category-desc h2 {
+    margin-bottom: -2px !important;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.card .price {
+    color: #DB3022;
+}
+
+.card .card-title {
+    font-size: 16px;
+}
+
+.card .rating .star img {
+    height: 14px;
+    width: 14px;
+}

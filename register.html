@@ -20,8 +20,8 @@
             </div>
         </div>
         <div class="btn-group switch" role="group">
-            <button type="button" class="btn btn-primary">Customer</button>
-            <button type="button" class="btn btn-light">Seller</button>
+            <button type="button"onclick="ubah1()" class="btn btn-primary">Customer</button>
+            <button type="button" onclick="ubah2()" class="btn btn-light">Seller</button>
         </div>
         <form class="auth">
             <div class="form-group input name">
@@ -43,4 +43,22 @@
     </div>
     <script src="./assets/js/bootstrap.bundle.js"></script>
 </body>
+<script type="text/javascript">
+    function ubah1 (){
+        document.getElementById("1").style.backgroundColor = "#ffffff";
+        document.getElementById("1").style.color = "#9B9B9B";
+        document.getElementById("2").style.color = "#ffffff";
+        document.getElementById("2").style.backgroundColor = "#DB3022";
+        document.getElementById("form2").style.display = "flex";
+        document.getElementById("form1").style.display = "none";
+    }
+    function ubah2 () {
+        document.getElementById("2").style.backgroundColor = "#ffffff";
+        document.getElementById("2").style.color = "#9B9B9B";
+        document.getElementById("1").style.color = "#ffffff";
+        document.getElementById("1").style.backgroundColor = "#DB3022";
+        document.getElementById("form1").style.display = "flex";
+        document.getElementById("form2").style.display = "none";
+    }
+</script>
 </html>

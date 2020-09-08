@@ -3,396 +3,1068 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Blanja</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Timotius">
+    <title>Product</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
-    <link rel="stylesheet" href="./assets/css/home.css">
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-        <nav class="navbar w-100 sticky-top bg-light d-flex justify-content-around align-items-center mb-5">
-            <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="logo"></a>
+    <nav class="navbar sticky-top container w-100">
+        <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="logo"></a>
         
-            <div class="form d-flex flex-row justify-content-center align-items-center">
-                <div class="search-bar">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <a href="#"><img class="search-icon" src="./assets/images/search.svg" alt="search"></a>
-                <button type="button" id="filter" class="btn btn-outline-dark filter"><img class="filter-icon" src="./assets/images/filter.svg" alt="filter"></button>
+        <div class="row mr-1">
+            <div class="col-md-12 col-sm-12 search-group d-flex position-relative">
+                <input type="text" class="form-control search-input border-secondary rounded-pill" placeholder="Search" aria-label="Search">
+                <img src="./assets/images/Search.svg" alt="search icon" class="search-icon position-absolute">
+                <button class="btn btn-outline-secondary ml-2"><img src="./assets/images/filter.svg" alt="Filter" aria-label="Filter"></button>    
             </div>
+        </div>
+        <div class="btn-user row d-flex align-items-center">
+            <div class="col-md-2 col-6">
+                <a href="#"><img src="./assets/images/cart.svg" alt="search icon" class="cart-icon"></a>
+            </div>
+            <div class="col-md-10 col-6 d-flex">
+                <button class="btn btn-primary rounded-pill mr-2 p-0 login">Login</button>
+                <button class="btn btn-outline-secondary rounded-pill p-0">Signup</button>
+            </div>
+            </div>
+        </div>
+    </nav>
     
-            <div class="nav-right d-flex align-items-center justify-content-end">
-                    <a href="#" class=""><img class="cart-icon mr-5" src="./assets/images/cart.svg" alt="search"></a>
-                    <button type="button" class="btn btn-light login-btn mr-4">Login</button>
-                    <button type="button" class="btn btn-light signup-btn">Signup</button>
-                
+    <div class="container w-100 mt-5">
+        <div class="slider-container d-flex justify-content-between align-items-center position-relative">
+            <div class="gambar position-relative">
+                <img src="./assets/images/1.png" class="img1 rounded" alt="gambar">
+                <button class="btn btn-default position-absolute rounded-circle btn-arrow"><img src="./assets/images/left.png" alt="left"></button>
             </div>
-        </nav>
-        <div class="slider-wrapper">
-            <div class="productSlider justify-content-around">
-                <div class="slidePicture">
-                <img class="gambar" src="./assets/images/1.png"/>
-                <div class="left-arrow d-flex align-items-center">
-                    <button class="btn-outline-dark position-relative"><img src="./assets/images/left.png"/></button>
-                    
-                </div>
-                </div>
-                <div class="slidePicture">
-                    <img class="gambar" src="./assets/images/2.jpg"/>
-                    <div class="cardcaption">
-                        <h2>Trends in 2020</h2>
-                    </div>
-                </div>
-                <div class="slidePicture">
-                    <img class="gambar" src="./assets/images/3.jpg"/>
-                    <div class="cardcaption1">
-                        <h2>Black edition</hh2>
-                    </div>
-                </div>
-                <div class="slidePicture">
-                    <img class="gambar" src="./assets/images/4.png"/>
-                    <div class="right-arrow d-flex align-items-center">
-                        <button class="btn-outline-dark position-relative"><img src="./assets/images/right.png"/></button>
-                        
-                    </div>
-                </div>
+            <div class="gambar">
+                <img src="./assets/images/2.png" class="img2 rounded" alt="gambar">
+                <span class="position-absolute caption font-weight-bold">Trends in 2020</span>
             </div>
-            <div class="dotList position-absolute">
-                <ul class="">
-                    <li style="color:rgb(31, 27, 27)">•</li>
-                    <li style="color:#8E8A8A">•</li>
-                    <li style="color:#8E8A8A">•</li>
-                    <li style="color:#8E8A8A">•</li>
-                    <li style="color:#8E8A8A">•</li>
-                </ul>
+            <div class="gambar">
+                <img src="./assets/images/3.png" class="img3 rounded" alt="gambar">
+                <button class="btn btn-default position-absolute rounded-circle btn-arrow1"><img src="./assets/images/right.png" alt="right"></button>
+                <span class="position-absolute caption1 font-weight-bold">Trends in 2020</span>
             </div>
+            <div class="gambar">
+                <img src="./assets/images/4.png" class="img4 rounded" alt="gambar">
+            </div>
+        </div>
+        <div class="indicator">
+            <span class="dot font-weight-bold text-secondary">•</span>
+            <span class="dot1 font-weight-bold">•</span>
+            <span class="dot1 font-weight-bold">•</span>
+            <span class="dot1 font-weight-bold">•</span>
+            <span class="dot1 font-weight-bold">•</span>
+            
+        </div>
 
-            <div class="main mt-5">
-                <h1 class="category mb-1">Category</h1>
-                <p class="categoryChildren">What are you currently looking for</p>
+        <div class="category mt-5">
+            <h2 class="font-weight-bold">Category</h2>
+            <span class="detail">What are you currently looking for</span>
+        </div>
+        
+        <div class="slider-container-dua mt-4 d-flex justify-content-between align-items-center position-relative">
+            <div class="item1 position-relative d-flex justify-content-center align-items-center">
+                <img src="./assets/images/baju.png" class="img1 rounded" alt="gambar">
+                <span class="position-absolute caption2 font-weight-bold">T-Shirt</span>
             </div>
-            <div class="row distroSlider d-flex align-content-between justify-content-between align-items-center">
-                <div class="pakaianSlider1 col-md d-flex justify-content-center align-items-center mr-4" id="category-pic" style="width: 206px;height: 220px;">
-                    <img class="gambarset1" id="img-category" src="./assets/images/baju.png"/>
-                    <div class="cardcaptionDistro1 text-center position-absolute">
-                        <h2>T-Shirt</h2>
-                    </div>
-                </div>
-                <div class="pakaianSlider2 col-md d-flex justify-content-center align-items-center mr-4" id="category-pic" style="width: 206px;height: 220px;">
-                    <img class="gambarset2" id="img-category" src="./assets/images/celana-hijau.png"/>
-                    <div class="cardcaptionDistro2 text-center position-absolute">
-                        <h2>Shorts</h2>
-                    </div>
-                </div>
-                <div class="pakaianSlider3 col-md d-flex justify-content-center align-items-center mr-4" id="category-pic" style="width: 206px;height: 220px;">
-                    <img class="gambarset3" id="img-category" src="./assets/images/jaket.png"/>
-                    <div class="cardcaptionDistro3 text-center position-absolute">
-                        <h2>Jacket</hh2>
-                    </div>
-                </div>
-                <div class="pakaianSlider4 col-md d-flex justify-content-center align-items-center mr-4" id="category-pic" style="width: 206px;height: 220px;">
-                    <img class="gambarset4" id="img-category" src="./assets/images/celana-panjang.png"/>
-                    <div class="cardcaptionDistro4 text-center position-absolute">
-                        <h2 class="text-center">Pants</h2>
-                    </div>
-                </div>
-                <div class="pakaianSlider5 col-md d-flex justify-content-center align-items-center" id="category-pic" style="width: 206px;height: 220px;">
-                    <img class="gambarset5" id="img-category" src="./assets/images/sepatu.png"/>
-                    <div class="cardcaptionDistro5 text-center position-absolute">
-                        <h2 class="text-center">Shoes</h2>
-                    </div>
-                    <div class="right-arrow2 position-absolute">
-                        <button class="btn-outline-dark position-relative"><img src="./assets/images/right.png"/></button>
-                    </div>
-                </div>
+            <div class="item2 d-flex justify-content-center align-items-center">
+                <img src="./assets/images/celana-hijau.png" class="rounded" alt="gambar">
+                <span class="position-absolute caption2 font-weight-bold">Shorts</span>
             </div>
+            <div class="item3 d-flex justify-content-center align-items-center">
+                <img src="./assets/images/jaket.png" class="rounded" alt="gambar">
+                <button class="btn btn-default position-absolute rounded-circle btn-arrow3"><img src="./assets/images/right.png" alt="right"></button>
+                <span class="position-absolute caption2 font-weight-bold">Jacket</span>
+            </div>
+            <div class="item4 d-flex justify-content-center align-items-center">
+                <img src="./assets/images/celana-panjang.png" class="img4 rounded" alt="gambar">
+                <span class="position-absolute caption2 font-weight-bold">Pants</span>
+            </div>
+            <div class="item5 d-flex justify-content-center align-items-center">
+                <img src="./assets/images/sepatu.png" class="img4 rounded" alt="gambar">
+                <span class="position-absolute caption2 font-weight-bold">Shoes</span>
+            </div>
+        </div>
 
-            <div class="newcomers mt-5">
-                <h1 class="newone">New</h1>
-                <p class="newdetail">You’ve never seen it before!</p>
-            </div>
+        <div class="category mt-5">
+            <h2 class="font-weight-bold">New</h2>
+            <span class="detail">What are you currently looking for</span>
+        </div>
 
-            <div class="row list-product d-flex align-content-between justify-content-between align-items-center mt-5">
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
-                    </div>
-                </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
-                    </div>
-                </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
-                    </div>
-                </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
-                    </div>
-                </div>
-                <div class="product col-md mb-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
-                    </div>
-                </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
-                    </div>
-                </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
-                    </div>
-                </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
-                    </div>
-                </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
-                    </div>
-                </div>
-                <div class="product col-md mb-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
-                    </div>
-                </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
-                    </div>
-                </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
-                    </div>
-                </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
-                    </div>
-                </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
-                    </div>
-                </div>
-                <div class="product col-md mb-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
+        
+        <div class="row mb-3 mt-4">
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="Populars mt-4">
-                <h1 class="pop">Popular</h1>
-                <p class="pops">Find clothes that are trending recently</p>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row list-product d-flex align-content-between justify-content-between align-items-center mt-3">
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
                     </div>
                 </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
                     </div>
                 </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
                     </div>
                 </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
+            </div>
+        </div>
+                     
+        <div class="row mb-3">
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
                     </div>
                 </div>
-                <div class="product col-md mb-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
                     </div>
                 </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
                     </div>
                 </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
                     </div>
                 </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
                     </div>
                 </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
+            </div>
+            
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
                     </div>
                 </div>
-                <div class="product col-md mb-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
                     </div>
                 </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
                     </div>
                 </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
                     </div>
                 </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
-                    </div>
-                </div>
-                <div class="product col-md mb-4 mr-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
-                    </div>
-                </div>
-                <div class="product col-md mb-4" id="category-pic">
-                    <img class="img-product" src="./assets/images/jas.png"/>
-                    <div class="product-desc">
-                        <h2>Men's formal suit -<br> Black & White</h2>
-                        <h3>$ 40.0</h3>
-                        <p>Zalora Cloth</p>
-                        <img src="./assets/images/stars.png"/>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-</body>
+        <div class="category mt-5">
+            <h2 class="font-weight-bold">Popular</h2>
+            <span class="detail">Find clothes that are trending recently</span>
+        </div>
+
+        <div class="row mt-4 mb-3">
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/images/jas.png" alt="jas" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's formal suit - Black & White</h5>
+                        <h5 class="price">$ 40.0</h5>
+                        <div class="rating d-flex align-items-center flex-row justify-items-center text-center">
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <div class="star">
+                                <img src="./assets/images/star.svg" alt="bintang">
+                            </div>
+                            <span class="text-secondary mt-1"><small>(10)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
 <script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
 </html>
