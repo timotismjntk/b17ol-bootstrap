@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Timotius">
-    <title>Checkout</title>
+    <title>My profile</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/profile.css">
 </head>
 <body>
-    <nav class="navbar sticky-top container w-100">
+    <nav class="nav navbar navbar-fluid sticky-top w-100">
         <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="logo"></a>
         
         <div class="row mr-1">
@@ -38,11 +38,8 @@
         </div>
     </nav>
 
-    <!-- <div class="container">
-        
-    </div> -->
-    <div class="container-fluid profile-container">
-        <div class="row">
+    <div class="profile-container w-100 d-flex flex-row align-items-center">
+        <div class="row w-100 d-flex justify-content-between">
             <div class="col col-3 pt-4 satu">
                 <div class="profile d-flex align-items-center">
                     <div class="gambar mr-3">
@@ -63,33 +60,33 @@
                     </div>
                 </div>
                 <div class="list mt-5 d-flex flex-column">
-                    <div class="user d-flex align-items-center">
-                        <div>
+                    <div class="user d-flex align-items-center justify-content-start mb-3">
+                        <div class="btn-1 mr-2">
                             <button class="btn btn-primary mr-2 rounded-circle"><img src="./assets/images/user-icon.svg" alt="icon"></button>
                         </div>
-                        <div>
-                            <span>My Account</span>
+                        <div class="teks">
+                            <a href="#"><span class="text-dark">My Account</span></a>
                         </div>
                     </div>
-                    <div class="map d-flex align-items-center">
-                        <div>
+                    <div class="map d-flex align-items-center justify-content-start mb-3">
+                        <div class="btn-2 mr-2">
                             <button class="btn btn-primary mr-2 rounded-circle"><img src="./assets/images/map-icon.svg" alt="location"></button>
                         </div>
-                        <div>
-                            <span class="text-secondary">Shipping Address</span>
+                        <div class="teks">
+                            <a href="#"><span class="text-secondary">Shipping Address</span></a>
                         </div>
                     </div>
-                    <div class="order d-flex align-items-center">
-                        <div>
+                    <div class="order d-flex align-items-center justify-content-start mb-3">
+                        <div class="btn-3 mr-2">
                             <button class="btn btn-primary mr-2 rounded-circle"><img src="./assets/images/order-icon.svg" alt="order"></button>
                         </div>
-                        <div>
-                            <span class="text-secondary">My Order</span>
+                        <div class="teks">
+                            <a href="#"><span class="text-secondary">My Order</span></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col col-9 pt-5 dua">
+            <div class="col col-8 pt-5 d-flex align-items-center dua">
                 <div class="account-container">
                     <div class="d-flex flex-column">
                         <div class="title">
@@ -98,8 +95,7 @@
                         <div class="subtitle">
                             <span class="text-secondary">Manage your profile information</span>
                         </div>
-                        <div class="line1">
-                            <img src="./assets/images/line3.svg" alt="">
+                        <div class="line1 mt-4 mb-5">
                         </div>
                         <div class="data row">
                             <div class="col-8">
@@ -124,68 +120,56 @@
                                     </div>
                                     <div class="gender form-group row align-items-center">
                                         <span class="col-3 text-right p-0 text-secondary">Gender</span>
-                                        <div class="col-9 d-flex w-100 align-items-center justify-content-between">
-                                            <div class="radio align-items-center">
-                                                <input type="radio" name="gender">
+                                        <div class="col-9 d-flex w-100 vs align-items-center justify-content-between">
+                                            <div class="form-check">
+                                                <input class="form-check-input position-absolute" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="radio-input">
                                             </div>
-                                            <div class=" align-items-center">
+                                            <div class="align-items-center">
                                                 <span class="text-secondary">Laki-laki</span>
                                             </div>
                                             <div class="radio">
                                                 <input type="radio" name="gender">
                                             </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input position-absolute" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="radio-input">
+                                            </div>
                                             <div>
                                                 <span class="text-secondary">Perempuan</span>
                                             </div>
+                                            
                                         </div>
                                     </div>
-                                    <div class="dob form-group row align-items-center">
+                                    <div class="form-group row align-items-center">
                                         <span class="col-3 text-right p-0 text-secondary">Date of Birth</span>
-                                        <div class="col-9 d-flex w-100 justify-content-between">
+                                        <div class="tanggal col-9 d-flex w-100 justify-content-between">
                                             <div class="date dropdown">
-                                                <button type="button" class="btn-secondary dropdown-toggle">Date</button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">1</a>
-                                                    <a class="dropdown-item" href="#">2</a>
-                                                    <a class="dropdown-item" href="#">3</a>
-                                                </div>
+                                                <button type="button" class="btn-secondary d-flex align-items-center justify-content-between dropdown-toggle">1</button>
                                             </div>
                                             <div class="month dropdown">
-                                                <button type="button" class="btn-secondary dropdown-toggle">Month</button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">January</a>
-                                                    <a class="dropdown-item" href="#">Febuary</a>
-                                                    <a class="dropdown-item" href="#">March</a>
-                                                </div>
+                                                <button type="button" class="btn-secondary d-flex align-items-center justify-content-between dropdown-toggle">January</button>
                                             </div>
                                             <div class="year dropdown">
-                                                <button type="button" class="btn-secondary dropdown-toggle">Year</button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">1990</a>
-                                                    <a class="dropdown-item" href="#">1991</a>
-                                                    <a class="dropdown-item" href="#">1993</a>
-                                                </div>
+                                                <button type="button" class="btn-secondary d-flex align-items-center justify-content-between dropdown-toggle">1990</button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="save form-group row align-items-center">
+                                    <div class="save form-group mt-5 row align-items-center">
                                         <span class="col-3 text-right p-0"></span>
                                         <div class="col-7 d-flex align-items-center">
-                                            <button class="btn-primary">Save</button>
+                                            <button class="btn-primary rounded-pill">Save</button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
-                            <div class="line">
-                                <img src="./assets/images/line4.svg" alt="">
+                            <div class="line ml-5 mr-3">
                             </div>
                             <div class="col-3 w-100">
-                                <div class="img d-flex flex-column align-items-center">
-                                    <div>
-                                        <img src="./assets/images/profil2.svg" alt="" width="110px" height="110px">
+                                <div class="pics d-flex flex-column align-items-center">
+                                    <div class="foto">
+                                        <img src="./assets/images/profil2.svg" alt="profil">
                                     </div>
-                                    <div class="change">
-                                        <button class="btn-secondary">Select image</button>
+                                    <div class="select pt-4">
+                                        <button class="btn-outline-secondary rounded-pill">Select image</button>
                                     </div>
                                 </div>
                             </div>

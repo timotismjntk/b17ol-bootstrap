@@ -1,5 +1,20 @@
+@font-face{
+    font-family: Metropolis;
+    src: url("../fonts/Metropolis-Regular.woff") format("woof"),
+    url("../fonts/Metropolis-Regular.woff2") format("woff2"),
+    url("../fonts/Metropolis-SemiBold.woff") format("woff"),
+    url("../fonts/Metropolis-SemiBold.woff2") format("woff2"),
+    url("../fonts/Metropolis-Bold.woff") format("woff"),
+    url("../fonts/Metropolis-Bold.woff2") format("woff2");
+}
+
+body {
+    font-family: "Metropolis";
+}
+
 .navbar {
-    background-color: #ffffff
+    background-color: #ffffff;
+    padding: 0 110px
 }
 
 .row .search-input {
@@ -22,29 +37,58 @@
 
 
 .profile-container{
-    margin-left: 105px;
+    width: 100%;
+    margin-left: 20px;
 }
 
 .satu {
     margin-top: 35px;
+    margin-left: 90px
 }
 
 .profile-container .dua {
     background-color: #F5F5F5;
+    padding-top: 40px;
+    padding-left: 45px;
+    padding-right: 12px !important;
+    padding-bottom: 25%;
 }
 
 .profile-container .profile .name span {
     font-size: 16px;
     line-height: 24px;
 }
+body {
+    overflow-x: hidden;
+}
+.user .teks span {
+    font-weight: 600;
+}
 
 .account-container {
-    margin-left: 40px;
-    width: 750px;
+    width: 780px;
     height: 636px;
     background-color: #fff;
     padding-top: 30px;
     padding-left: 30px;
+}
+
+.list .btn-1 button {
+    background-color: #456BF3;
+    outline: none;
+    border: none;
+}
+
+.list .btn-2 button {
+    background-color: #F36F45;
+    outline: none;
+    border: none;
+}
+
+.list .btn-3 button {
+    background-color: #F3456F;
+    outline: none;
+    border: none;
 }
 
 .account-container .title span {
@@ -57,4 +101,58 @@
     border: 1px solid #9B9B9B;
     border-radius: 4px;
     padding: 0 20px;
+}
+.line {
+    border-left: 1px solid #D4D4D4;
+    height: 146px;
+}
+
+.line1 {
+    border-bottom: 1px solid #D4D4D4;
+    width: 720px;
+}
+
+.data .gender .form-check {
+    top: -27px;
+    left: 35px;
+    z-index: 1;
+}
+
+.gender .vs {
+    margin-left: -30px;
+}
+
+.account-container .foto {
+    width: 110px;
+    height:110px;
+}
+
+.form-group .tanggal .dropdown button {
+    border: 1px solid #9B9B9B;
+    border-radius: 4px;
+    width: 90px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #9B9B9B;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #9B9B9B;
+}
+
+.save button {
+    width: 100px;
+    height: 36px;
+    background-color: #DB3022;
+    outline: none;
+    border: none;
+}
+
+.pics .select button {
+    outline: none;
+    border: none;
+    background: #FFFFFF;
+    border: 1px solid #9B9B9B;
+    box-sizing: border-box;
+    width: 140px;
+    height: 36px;
 }
